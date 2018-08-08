@@ -43,7 +43,7 @@ export class MovieComponent implements OnInit {
       });
       this._moviesServices.getSimilarMovies(id).subscribe(res => {
         console.log(res.results);
-        
+        //THIS IS DJ+1 CODE
         this.similarMovies = res.results.slice(0, 12);
       });
     })
